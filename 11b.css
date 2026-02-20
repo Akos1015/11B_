@@ -1,0 +1,106 @@
+
+* {
+    box-sizing: border-box; /* Minden elem box model alkalmazása */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+}
+
+header {
+    display: flex;
+    flex-direction: column; /* A képek és szöveg függőleges elrendezése */
+    align-items: center;
+    background-color: #da0000;
+    color: white;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between; /* Kép és navigáció között távolság */
+    width: 100%;  /* 100% szélesség beállítása */
+}
+
+.kep-container {
+    display: flex; 
+    justify-content: space-between; 
+    width: 100%;  /* 100% szélességre állítva */
+    align-items: center;
+    
+}
+
+.kep {
+    width: 12%;  /* Képek szélessége */
+    height: auto; 
+    border-radius: 200px; 
+    border-top: 60px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    background: white;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.szin-gomb {
+    background-color: #000000; 
+    color: white; 
+    margin-top: auto; 
+    padding: 15px 20px; 
+    text-align: center;
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 16px; 
+    cursor: pointer; 
+    transition: background-color 0.3s;
+    border-radius: 5%;
+    border-bottom: 20px;
+    margin-top: 40px;
+}
+
+.szin-gomb:hover {
+    background-color: #ffc400; 
+    color: #000000;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    background: ee0505;
+    color: rgb(255, 0, 0);
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.secret {
+    opacity: 0;
+}
+
+.h1{
+    text-align: center;
+    margin-top: 0px;
+}
